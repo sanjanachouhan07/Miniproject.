@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attractions - Ludhiana Visito</title>
+  <meta name="description" content="Explore the top attractions and places to visit in Ludhiana, Punjab. From historical sites to modern entertainment venues.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <h1>Ludhiana <span>Visito</span></h1>
+        </a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="attraction.html">Attractions</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="banner-content">
+      <h1>Top Attractions in Ludhiana</h1>
+      <p>Discover the best places to visit in Punjab's Manchester</p>
+    </div>
+  </section>
+
+  <section class="attraction-filter">
+    <div class="container">
+      <div class="filter-container">
+
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="historical">Historical</button>
+          <button class="filter-btn" data-filter="religious">Religious</button>
+          <button class="filter-btn" data-filter="entertainment">Entertainment</button>
+          <button class="filter-btn" data-filter="parks">Parks</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="attraction-list">
+    <div class="container">
+      <div class="attraction-grid" id="attraction-container">
+        <!-- Attraction 1 -->
+        <div class="attraction-card" data-category="parks" id="pau">
+          <div class="attraction-img">
+            <img src="images/photopau1.webp" alt="Punjab Agricultural University">
+          </div>
+          <div class="attraction-info">
+            <h3>Punjab Agricultural University</h3>
+            <p>Beautiful campus with sprawling gardens, research facilities, and museums showcasing Punjab's agricultural heritage.</p>
+            <div class="attraction-details">
+              <div class="detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Ferozepur Road</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-clock"></i>
+                <span>9:00 AM - 5:00 PM</span>
+              </div>
+            </div>
+            <div class="attraction-gallery">
+              <img src="images/pau garden.jpg" alt="PAU Garden">
+              <img src="images/PAU-Museum_1506071617t.jpg" alt="PAU Museum">
+            </div>
+          </div>
+        </div>
+
+        <!-- Attraction 2 -->
+        <div class="attraction-card" data-category="historical" id="war-museum">
+          <div class="attraction-img">
+            <img src="images/maharaja-ranjit-singh-war-museum-ludhiana-punjab-1-attr-hero.jpg" alt="Maharaja Ranjit Singh War Museum">
+          </div>
+          <div class="attraction-info">
+            <h3>Maharaja Ranjit Singh War Museum</h3>
+            <p>Dedicated to India's military history with weapons, uniforms, and artifacts on display from various wars.</p>
+            <div class="attraction-details">
+              <div class="detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Ludhiana-Ferozepur Road</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-clock"></i>
+                <span>10:00 AM - 6:00 PM (Closed Mondays)</span>
+              </div>
+            </div>
+            <div class="attraction-gallery">
+              <img src="images/maharajadisplay.jpg" alt="War Museum Display">
+              <img src="images/maharajaRdisplay2.jpg" alt="Military Artifacts">
+            </div>
+          </div>
+        </div>
+
+        <!-- Attraction 3 -->
+        <div class="attraction-card" data-category="entertainment" id="hardys-world">
+          <div class="attraction-img">
+            <img src="images/new......hardys.jpg" alt="Hardy's World">
+          </div>
+          <div class="attraction-info">
+            <h3>Hardy's World</h3>
+            <p>Popular amusement and water park with thrilling rides, wave pool, and entertainment options for all ages.</p>
+            <div class="attraction-details">
+              <div class="detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>GT Road, Lalton Kalan</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-clock"></i>
+                <span>10:30 AM - 7:00 PM</span>
+              </div>
+            </div>
+            <div class="attraction-gallery">
+              <img src="images/imageshardys.jpg" alt="Water Rides">
+              <img src="images/hardysoverview.jpg" alt="Park Overview">
+            </div>
+          </div>
+        </div>
+
+        <!-- Attraction 4 -->
+        <div class="attraction-card" data-category="religious">
+          <div class="attraction-img">
+            <img src="images/gurudwara-shri-manji-sahib.jpg" alt="Gurudwara Manji Sahib">
+          </div>
+          <div class="attraction-info">
+            <h3>Gurudwara Manji Sahib</h3>
+            <p>Historic Sikh temple with beautiful architecture and peaceful surroundings for spiritual reflection.</p>
+            <div class="attraction-details">
+              <div class="detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Alamgir</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-clock"></i>
+                <span>Open 24 Hours</span>
+              </div>
+            </div>
+            <div class="attraction-gallery">
+              <img src="images/gurudwara-shri-manji-sahib-interior.avif" alt="Temple Interior">
+              <img src="images/imagesmanjisahib.jpg" alt="Prayer Hall">
+            </div>
+          </div>
+        </div>
+
+        <!-- Attraction 5 -->
+        <div class="attraction-card" data-category="entertainment">
+          <div class="attraction-img">
+            <img src="images/nehrugardengate1.jpeg" alt="Nehru Rose Garden">
+          </div>
+          <div class="attraction-info">
+            <h3>Nehru Rose Garden</h3>
+            <p>Beautiful garden featuring various species of roses, walking paths, and rest areas ideal for nature lovers.</p>
+            <div class="attraction-details">
+              <div class="detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Civil Lines</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-clock"></i>
+                <span>5:00 AM - 9:00 PM</span>
+              </div>
+            </div>
+            <div class="attraction-gallery">
+              <img src="images/nehru22.jpg" alt="Rose Garden View">
+              <img src="images/nehru33.jpg" alt="Garden Flowers">
+            </div>
+          </div>
+        </div>
+
+        <!-- Attraction 6 -->
+        <div class="attraction-card" data-category="historical">
+          <div class="attraction-img">
+            <img src="images/philaur fort11.jpg" alt="Phillaur Fort">
+          </div>
+          <div class="attraction-info">
+            <h3>Phillaur Fort</h3>
+            <p>Historic fort built in the 19th century, now housing a police training academy with architectural significance.</p>
+            <div class="attraction-details">
+              <div class="detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Phillaur</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-clock"></i>
+                <span>9:00 AM - 5:00 PM (By Permission)</span>
+              </div>
+            </div>
+            <div class="attraction-gallery">
+              <img src="images/phillaurwall.jpg" alt="Fort Wall">
+              <img src="images/phillaurinterior.avif" alt="Fort Interior">
+            </div>
+          </div>
+        </div>
+
+        <!-- Attraction 7 -->
+        <div class="attraction-card" data-category="entertainment">
+          <div class="attraction-img">
+            <img src="images/imagespavilion.jpg" alt="Pavilion Mall">
+          </div>
+          <div class="attraction-info">
+            <h3>Pavilion Mall</h3>
+            <p>Modern shopping complex with international brands, food court, and entertainment options for the whole family.</p>
+            <div class="attraction-details">
+              <div class="detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Fountain Chowk</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-clock"></i>
+                <span>10:00 AM - 10:00 PM</span>
+              </div>
+            </div>
+            <div class="attraction-gallery">
+              <img src="images/imagespavilion1.jpg" alt="Mall Interior">
+              <img src="images/timezone ludhianapavilion.png" alt="Food Court">
+            </div>
+          </div>
+        </div>
+
+        <!-- Attraction 8 -->
+        <div class="attraction-card" data-category="parks">
+          <div class="attraction-img">
+            <img src="images/tigergate.jpg" alt="Tiger Safari">
+          </div>
+          <div class="attraction-info">
+            <h3>Tiger Safari</h3>
+            <p>Wildlife park where visitors can observe tigers and other animals in a natural habitat from the safety of vehicles.</p>
+            <div class="attraction-details">
+              <div class="detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Amaltas Road, Ludhiana</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-clock"></i>
+                <span>9:00 AM - 5:00 PM (Closed Mondays)</span>
+              </div>
+            </div>
+            <div class="attraction-gallery">
+              <img src="images/tigerzoom.jpg" alt="Tiger in Enclosure">
+              <img src="images/og-Tiger-Safari-in-Ludhiana.webp" alt="Safari Path">
+            </div>
+          </div>
+        </div>
+
+        <!-- Attraction 9 -->
+        <div class="attraction-card" data-category="religious">
+          <div class="attraction-img">
+            <img src="images/images...jamma.jpg" alt="Jama Masjid">
+          </div>
+          <div class="attraction-info">
+            <h3>Jama Masjid</h3>
+            <p>Historic mosque with beautiful architecture and religious significance for the Muslim community.</p>
+            <div class="attraction-details">
+              <div class="detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Field Ganj</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-clock"></i>
+                <span>Open for prayer times</span>
+              </div>
+            </div>
+            <div class="attraction-gallery">
+              <img src="images/imagesjamainterior.jpg" alt="Mosque Exterior">
+              <img src="images/jamaprayhalll....webp" alt="Prayer Area">
+            </div>
+          </div>
+        </div>
+
+         <!-- Attraction 10 -->
+         <div class="attraction-card" data-category="religious">
+          <div class="attraction-img">
+            <img src="images/govind godham.avif" alt="govind godham">
+          </div>
+          <div class="attraction-info">
+            <h3>Govind Godham</h3>
+            <p>Historic Temple with beautiful architecture and religious significance for the Hindu community.</p>
+            <div class="attraction-details">
+              <div class="detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Gaushala Rd, Partap Singhwala, Ludhiana, Punjab 141008</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-clock"></i>
+                <span>Open for prayer times</span>
+              </div>
+            </div>
+            <div class="attraction-gallery">
+              <img src="images/govinddhaninterioooor.jpg" alt=" Exterior">
+              <img src="images/govingahammurtiiii.jpg" alt="Prayer Area">
+            </div>
+          </div>
+        </div>
+
+         <!-- Attraction 11 -->
+         <div class="attraction-card" data-category="religious">
+          <div class="attraction-img">
+            <img src="images/images......iskon.jpg" alt="iskon temple">
+          </div>
+          <div class="attraction-info">
+            <h3>Iskon Temple</h3>
+            <p>Historic temple with beautiful architecture and religious significance for the hindu community.</p>
+            <div class="attraction-details">
+              <div class="detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>South City Ludhiana</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-clock"></i>
+                <span>Open for prayer times</span>
+              </div>
+            </div>
+            <div class="attraction-gallery">
+              <img src="images/jagANATH INTERIOR.jpg" alt=" Exterior">
+              <img src="images/imagesexterior.jpg" alt="Prayer Area">
+            </div>
+          </div>
+        </div>
+
+        <!-- Attraction 12 -->
+        <div class="attraction-card" data-category="historical">
+          <div class="attraction-img">
+            <img src="images/ludhiana-lodhi ....jpg" alt="Lodhi Fort">
+          </div>
+          <div class="attraction-info">
+            <h3>Lodhi Fort</h3>
+            <p>Ancient fort with historical significance dating back to the Lodhi dynasty, featuring unique architecture.</p>
+            <div class="attraction-details">
+              <div class="detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Ludhiana-Ferozepur Highway</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-clock"></i>
+                <span>8:30 AM - 5:30 PM</span>
+              </div>
+            </div>
+            <div class="attraction-gallery">
+              <img src="images/ludhianalodhi1111...jpg" alt="Fort Ruins">
+              <img src="images/ludhianalodhi22222''...jpg" alt="Ancient Structure">
+            </div>
+          </div>
+        </div>
+
+        <!-- Attraction 13 -->
+        <div class="attraction-card" data-category="parks">
+          <div class="attraction-img">
+            <img src="images/rakh.....baghggg.jpg" alt="Rakh-bagh">
+          </div>
+          <div class="attraction-info">
+            <h3>Rakh Bagh</h3>
+            <p>Rakh Bagh Park is very Nice Place to Spend some Quality Time. It is well maintained park and one of the popular place in Ludhiana..Amazing place for amusements,fun and play etc.</p>
+            <div class="attraction-details">
+              <div class="detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span> Club Road Opposite Guru Nanak Stadium, Ludhiana 141001  Punjab</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-clock"></i>
+                <span>Open 24 hours</span>
+              </div>
+            </div>
+            <div class="attraction-gallery">
+              <img src="images/rakhggggg.........................jpg" alt="attractions">
+              <img src="images/rakhhhh..........g.jpg" alt="rides">
+            </div>
+          </div>
+        </div>
+
+        <!-- Attraction 14 -->
+        <div class="attraction-card" data-category="parks">
+          <div class="attraction-img">
+            <img src="images/stadiumm.........g.gif" alt="gurunanak stadium">
+          </div>
+          <div class="attraction-info">
+            <h3>Gurunanak Stadium</h3>
+            <p>Guru Nanak Stadium is a multi-purpose stadium in Ludhiana, India. It hosts football matches and athletic competitions. It is used as one of the home grounds ...</p>
+            <div class="attraction-details">
+              <div class="detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Club Road, Opp Rakh Bagh Gate 4, Gandhi Nagar, Ludhiana, Punjab 141001</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-clock"></i>
+                <span>5:00 AM to 7:00 PM,close on sunday</span>
+              </div>
+            </div>
+            <div class="attraction-gallery">
+              <img src="images/stadiumvvvv..............jpg" alt="inside">
+              <img src="images/stadiumxxxx.........jpg" alt="culture">
+            </div>
+          </div>
+        </div>
+
+        <!-- Attraction 15 -->
+        <div class="attraction-card" data-category="religious">
+          <div class="attraction-img">
+            <img src="images/durgamandirrr......g.jpg" alt="Matarani mandir">
+          </div>
+          <div class="attraction-info">
+            <h3>Mata Rani Mandir</h3>
+            <p>Shri Durga Mata Mandir is a hindu temple located in Ludhiana, Punjab. The average rating of this place is 4.70 out of 5 stars based.</p>
+            <div class="attraction-details">
+              <div class="detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Civil Lines, Ludhiana - 141001 (Nr Jagraon Bridge)</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-clock"></i>
+                <span>6:30 AM - 8:30 PM</span>
+              </div>
+            </div>
+            <div class="attraction-gallery">
+              <img src="images/durgamandirmmmm.......jpg" alt="interior">
+              <img src="images/durgamandirmeee........jpg" alt="Structure">
+            </div>
+          </div>
+        </div>
+
+        <!-- Attraction 16 -->
+        <div class="attraction-card" data-category="entertainment">
+          <div class="attraction-img">
+            <img src="images/wavemallll.......gg.jpeg" alt="wave mall">
+          </div>
+          <div class="attraction-info">
+            <h3>Wave Mall</h3>
+            <p>Contemporary venue with stores & boutiques on multiple levels, including a food court,Game Zone & cinema....</p>
+            <div class="attraction-details">
+              <div class="detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>City Plaza, Plot No. 2 & 3, Ferozepur Rd, Ludhiana, Punjab 141012</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-clock"></i>
+                <span>10:30 am–11 pm</span>
+              </div>
+            </div>
+            <div class="attraction-gallery">
+              <img src="images/wavemallnnn......jpeg" alt="inside">
+              <img src="images/wavezoneee......jpeg" alt="fun zone">
+            </div>
+          </div>
+        </div>
+
+        <!-- Attraction 17 -->
+        <div class="attraction-card" data-category="religious">
+          <div class="attraction-img">
+            <img src="images/banglamukhimata....main.jpg" alt="banglamukhi dham">
+          </div>
+          <div class="attraction-info">
+            <h3>Bangla Mukhi Dham</h3>
+            <p> In Ludhiana, there are a few temples dedicated to Maa Baglamukhi, a deity in the Hindu religion. One prominent temple is the Shri Baglamukhi Dham Prachin Mandir located in Haibowal Kalan. Another location for a Baglamukhi temple is in Singla Enclave Road. There's also a temple on Pakhowal Road</p>
+            
+            <div class="attraction-details">
+              <div class="detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>RQCP+R6X, Singla Enclave Rd, Punjab 141116,pakhowal road,ludhiana</span>
+              </div>
+              <div class="detail">
+                <i class="fas fa-clock"></i>
+                <span>open for 24 hr</span>
+              </div>
+            </div>
+            <div class="attraction-gallery">
+              <img src="images/banglamukhihavann.....jpg" alt="inside">
+              <img src="images/banglamukhi......ot.jpg" alt="culture">
+            </div>
+          </div>
+        </div>
+
+<!-- Attraction 18 -->
+<div class="attraction-card" data-category="entertainment">
+  <div class="attraction-img">
+    <img src="images/clocktowerrrrr....jpeg" alt="clock tower market">
+  </div>
+  <div class="attraction-info">
+    <h3>Clock Tower Market</h3>
+    <p>The clock tower is erected in the center of the city which is still the hub of activities. Its very close to Ludhiana station and shopping markets. Most of the ...</p>
+    <div class="attraction-details">
+      <div class="detail">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Clock Tower Rd, Guruteg Bahadur, Old Ludhiana, Ludhiana, Punjab 141008</span>
+      </div>
+      <div class="detail">
+        <i class="fas fa-clock"></i>
+        <span>Open 24 hours</span>
+      </div>
+    </div>
+    <div class="attraction-gallery">
+      <img src="images/chauramar..ket.jpg" alt="market">
+      <img src="images/chauramarket...mm.k.jpg" alt="street">
+    </div>
+  </div>
+</div>
+
+<!-- Attraction 19 -->
+<div class="attraction-card" data-category="religious">
+  <div class="attraction-img">
+    <img src="images/dukhnivaranmmm...jpg" alt="dukhniwaran sahib">
+  </div>
+  <div class="attraction-info">
+    <h3>Gurudwara Dukh Niwaran Sahib</h3>
+    <p>Gurdwara Dukh Niwaran Sahib in Ludhiana is a serene and spiritual place offering peace and solace. The kirtan and langar services create a divine atmosphere ...</p>
+    <div class="attraction-details">
+      <div class="detail">
+        <i class="fas fa-map-marker-alt"></i>
+        <span> NH 1, Field Ganj, Towards, East Pass, opp. Jagraon Bridge ( Towards West Pass ), Ludhiana, Punjab 141008</span>
+      </div>
+      <div class="detail">
+        <i class="fas fa-clock"></i>
+        <span>Open 24 hours</span>
+      </div>
+    </div>
+    <div class="attraction-gallery">
+      <img src="images/dukhniwaraninteriorrr...jpg" alt="inside">
+      <img src="images/dukhniwarann..nnm.jpg" alt="culture">
+    </div>
+  </div>
+</div>
+
+<!-- Attraction 20 -->
+<div class="attraction-card" data-category="entertainment">
+  <div class="attraction-img">
+    <img src="images/goldustgateee....jpg" alt="goldust market">
+  </div>
+  <div class="attraction-info">
+    <h3>Goldust Market</h3>
+    <p>Experience Modern Living at GOLDUST Township, Ludhiana. Modern living meets excellence here. As a trusted real estate leader.Experience the Height of Style and Luxury with Our Modern Homes with food,hotels,market etc.</p>
+    <div class="attraction-details">
+      <div class="detail">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Alamgir Rd, Alamgir, Punjab 141116</span>
+      </div>
+      <div class="detail">
+        <i class="fas fa-clock"></i>
+        <span> Open 24 hours</span>
+      </div>
+    </div>
+    <div class="attraction-gallery">
+      <img src="images/goldustmarket....g.jpg" alt="inside">
+      <img src="images/goldustmmm.....jpg" alt="culture">
+    </div>
+  </div>
+</div>
+
+<!-- Attraction 21 -->
+<div class="attraction-card" data-category="entertainment">
+  <div class="attraction-img">
+    <img src="images/bistro...g.jpg" alt="BISTRO FLAMME BOIS">
+  </div>
+  <div class="attraction-info">
+    <h3>BISTRO FLAMME BOIS</h3>
+    <p>Reservations required · Has all you can eat · Has outdoor seating with amazing view and air freshing winds</p>
+    <div class="attraction-details">
+      <div class="detail">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Bistro Flamme Bois, Canal Road, S City Rd, Ludhiana, Punjab 141027</span>
+      </div>
+      <div class="detail">
+        <i class="fas fa-clock"></i>
+        <span>10:00 AM to 11:00 PM,close on sunday</span>
+      </div>
+    </div>
+    <div class="attraction-gallery">
+      <img src="images/bisto...in.webp" alt="inside">
+      <img src="images/bisto..ot.jpg" alt="sitting">
+    </div>
+  </div>
+</div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>Ludhiana <span>Visito</span></h2>
+          <p>Your guide to Punjab's Manchester</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="attraction.html">Attractions</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Ludhiana Visito. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
